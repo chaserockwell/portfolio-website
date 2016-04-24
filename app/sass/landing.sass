@@ -1,0 +1,53 @@
+// Landing Page
+
+.hero-container
+  width: 100%
+  position: relative
+
+  .hero-img
+    max-width: 100%
+    height: auto
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-image: linear-gradient(rgba($White, 1) 0%, rgba($White, 0) 80%, rgba($Black, 1))
+
+  .landing-elements
+    color: $Black
+    position: absolute
+    top: 0
+    width: 100%
+    text-align: center
+    z-index: 1
+
+    h1
+      font-size: 4rem
+      margin: 2rem 0 0
+
+    h2
+      margin: .5rem 0
+
+.down-arrow-container
+  visibility: hidden
+  position: relative
+  margin: -3.85rem auto 0
+
+  div
+    border: 3px solid $Yellow
+    border-left: none
+    border-top: none
+    height: 1.25rem
+    width: 1.25rem
+    position: relative
+    margin: 0 auto
+    top: .75rem
+    transform: rotate(45deg)
+
+
+
+

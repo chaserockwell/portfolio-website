@@ -1,0 +1,53 @@
+// Contact Page Styles
+
+.contact-container
+  background-color: $Yellow
+  text-align: center
+  padding-bottom: 1rem
+
+  .contact-text-container
+    margin-top: 2rem
+    h1
+      font-weight: 300
+      color: $Black
+
+    p
+      font-size: 1.25rem
+
+  .contact-form
+    .contact-message,
+    .contact-email,
+    .contact-btn
+      border: 2px solid $Black
+      border-radius: 5px
+      padding: .5rem
+      background: $White
+      color: $Black
+      outline: none
+
+    .contact-message
+      width: 75%
+      height: 8rem
+      max-width: 90%
+
+      &:focus
+        box-shadow: 0 0 .5rem .125rem $White
+
+    .contact-email
+      margin-top: .75rem
+      width: 50%
+
+      &:focus
+        box-shadow: 0 0 .5rem .125rem $White
+
+    .contact-btn
+      width: 25%
+      margin-top: 1rem
+      background: $White
+      color: $Black
+      text-align: center
+      font-weight: 600
+      padding-top: .55rem
+
+      &:active
+        background-color: darken($White, 10%)
